@@ -1,0 +1,5 @@
+name: documentation
+title: Simple Data Catalog Model
+version: ~
+nav:
+- artifacts/documentation/modules/schema/nav.adoc

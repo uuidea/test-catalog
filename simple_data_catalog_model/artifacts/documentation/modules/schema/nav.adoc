@@ -1,0 +1,67 @@
+[.truncate]
+* Information model
+** xref::index.adoc[Index]
+** Classes
+*** xref::class/Container.adoc[Container (root)]
+
+*** xref::class/Agent.adoc[Agent]
+
+
+
+*** xref::class/Any.adoc[Any]
+
+
+
+*** xref::class/Concept.adoc[Concept]
+
+
+
+
+*** xref::class/DataCatalog.adoc[DataCatalog]
+
+
+
+*** xref::class/DataService.adoc[DataService]
+
+
+
+*** xref::class/Dataset.adoc[Dataset]
+
+
+
+*** xref::class/DatasetSeries.adoc[DatasetSeries]
+
+
+
+*** xref::class/Distribution.adoc[Distribution]
+
+
+
+*** xref::class/Kind.adoc[Kind]
+
+
+
+*** xref::class/LiceneseDocument.adoc[LiceneseDocument]
+
+
+
+*** xref::class/Metric.adoc[Metric]
+
+
+
+*** xref::class/PeriodOfTime.adoc[PeriodOfTime]
+
+
+
+*** xref::class/QualityMeasurement.adoc[QualityMeasurement]
+
+
+
+*** xref::class/Resource.adoc[Resource]
+
+
+
+*** xref::class/URI.adoc[URI]
+
+
+

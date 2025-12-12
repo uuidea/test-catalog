@@ -1,0 +1,5 @@
+name: data-catalog-model
+title: Data Catalog Model
+version: ~
+nav:
+- artifacts/documentation/modules/schema/nav.adoc

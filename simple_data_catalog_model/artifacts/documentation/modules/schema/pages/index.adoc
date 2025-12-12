@@ -1,0 +1,68 @@
+= Index
+
+== Classes
+
+[cols="1,2"]
+|===
+| Name | Description
+
+
+| xref::class/Agent.adoc[`Agent`]
+| +++An entity (person, organization, or software) that can be a publisher, creator, or contributor of a resource.+++
+
+| xref::class/Any.adoc[`Any`]
+| n/a
+
+| xref::class/Concept.adoc[`Concept`]
+| +++A unit of thought (an idea or notion) that can be expressed as a term.+++
+
+| xref::class/Container.adoc[`Container`]
+| n/a
+
+| xref::class/DataCatalog.adoc[`DataCatalog`]
+| +++A curated collection of metadata about datasets, data services, and related resources.+++
+
+| xref::class/DataService.adoc[`DataService`]
+| +++A service that provides access to a dataset or a collection of datasets.+++
+
+| xref::class/Dataset.adoc[`Dataset`]
+| +++A collection of data, published or curated by a single agent, and available for access or download.+++
+
+| xref::class/DatasetSeries.adoc[`DatasetSeries`]
+| +++A series of datasets that are related in some way (e.g., by time, version, or theme).+++
+
+| xref::class/Distribution.adoc[`Distribution`]
+| +++A specific representation of a dataset, typically available for download or access via a service.+++
+
+| xref::class/Kind.adoc[`Kind`]
+| +++A vCard kind representing a contact point for a resource.+++
+
+| xref::class/LiceneseDocument.adoc[`LiceneseDocument`]
+| +++A vCard kind representing a contact point for a resource.+++
+
+| xref::class/Metric.adoc[`Metric`]
+| +++A measurable aspect of data quality (e.g., accuracy, completeness).+++
+
+| xref::class/PeriodOfTime.adoc[`PeriodOfTime`]
+| +++A temporal extent or interval.+++
+
+| xref::class/QualityMeasurement.adoc[`QualityMeasurement`]
+| +++An observation of a metric applied to a specific resource.+++
+
+| xref::class/Resource.adoc[`Resource`]
+| +++A resource that is described in the catalog (e.g., a dataset, a data service, or a catalog).+++
+
+| xref::class/URI.adoc[`URI`]
+| n/a
+
+|===
+
+== Types
+
+No types are defined in the schema.
+
+
+== Enumerations
+
+
+No enumerations are defined in the schema.
