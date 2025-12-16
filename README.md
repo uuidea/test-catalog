@@ -4,6 +4,12 @@ A lightweight, LinkML‑based data catalog that can be generated and validated a
 
 ---
 
+## WARNING
+
+***This project is pre-production. Backwards compatibility is not yet guaranteed.
+While the ultimate goal for the project is to valdiate against [DCAT AP](https://op.europa.eu/en/web/eu-vocabularies/dcat-ap) this is currently not the case yet. As the remaining issues will be fixed, this might result in incompatibility with the current data format.***
+
+
 ## Table of Contents
 
 1. [Adding Content to the Catalog](#adding-content-to-the-catalog)  
@@ -16,7 +22,7 @@ A lightweight, LinkML‑based data catalog that can be generated and validated a
 ## Adding Content to the Catalog
 
 All catalog metadata lives in `data-catalog/data-catalog.yaml`.  
-The file follows a **LinkML** schema (see `simple_data_catalog_model/.../data-catalog.yaml`).  
+The file follows a **LinkML** schema (see [simple_data_catalog_model](https://uuidea.github.io/simple_data_catalog_model/documentation/schema/index.html)).  
 
 ### 1. Datasets
 

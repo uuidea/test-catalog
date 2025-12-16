@@ -1,5 +1,5 @@
-name: data-catalog-model
+name: documentation
 title: Data Catalog Model
 version: ~
 nav:
-- artifacts/documentation/modules/schema/nav.adoc
+- modules/schema/nav.adoc

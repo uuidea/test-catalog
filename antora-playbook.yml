@@ -1,11 +1,11 @@
 site:
   title: Data Catalog
-  start_page: data-catalog:data-catalog:your-data-catalog.adoc
+  start_page: data-catalog:data-catalog:The_Title_Of_Your_Catalog.adoc
 content:
   sources: 
   - url: . # https://uuidea.github.io/simple_data_catalog/
     branches: main
-    start_page: data-catalog:data-catalog:your-data-catalog.adoc
+    start_page: data-catalog:data-catalog:The_Title_Of_Your_Catalog.adoc
     
 ui: 
   bundle:
