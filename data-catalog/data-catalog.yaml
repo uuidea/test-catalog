@@ -1,12 +1,11 @@
 dataCatalog:
-  identifier: ex:The_Title_Of_Your_Catalog
+  identifier: default:The_Title_Of_Your_Catalog
   description: a test data catalog created to validate the schema
   title: The Title Of Your Catalog
   license: 
     title: https://creativecommons.org/licenses/by-sa/4.0/
   publisher:
     name: my name
-
 
 
 datasets:
