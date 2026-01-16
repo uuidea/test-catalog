@@ -46,7 +46,8 @@ jobs:
       run: |
         chmod +x scripts/generate-datacatalog.sh
         ./scripts/generate-datacatalog.sh
-        
+    - name: remove old docs
+      run: rm -rf docs/
       ####################
       ## ANtora actions
       ####################
