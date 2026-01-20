@@ -41,7 +41,7 @@ jobs:
     - name: uv lock
       run: uv lock
     - name: Install Python project dependencies
-      run: uv sync --no-dev --no-install-project --locked
+      run: uv sync --no-dev --no-install-project
     - name: Generate Data Catalog
       run: |
         chmod +x scripts/generate-datacatalog.sh
