@@ -14,6 +14,26 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+ex:hdkehnf a dcat:Dataset ;
+    dcterms:description "A dataset to shocase how the lineage reporting by the simple_data_catalog works." ;
+    dcterms:license [ a dcterms:LicenseDocument ;
+            dcterms:title "cc-by 4.0" ] ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "my name" ] ;
+    dcterms:title "showcasing lineage" ;
+    vcard:contactPoint [ a vcard:Kind ;
+            vcard:hasEmail "my.name@example.com" ] ;
+    adms:status "production" ;
+    dcat:inSeries ex:abcde ;
+    dcat:theme ex:bcd,
+        ex:def ;
+    dcat:version [ a dcterms:PeriodOfTime ;
+            time:hasBeginning "2026-01-01"^^xsd:date ;
+            time:hasEnd "2026-12-31"^^xsd:date ] ;
+    odrl:hasPolicy plcy:open-information-policy ;
+    prov:wasDerivedFrom ex:herrcgre,
+        ex:jdhrkdh .
+
 ex:sfasdggfvrln a dqv:QualityMeasurement ;
     dqv:computedOn ex:herrcgre ;
     dqv:isMeasurementOf ex:fkrhkqewjewrc ;
@@ -61,33 +81,38 @@ plcy:register-in-catalog a odrl:Duty ;
     odrl:action "register" ;
     odrl:assignee "Data Provider" .
 
-ex:abc a skos:Concept ;
-    skos:altLabel "juice" ;
-    skos:definition "energy is energy" ;
-    skos:prefLabel "energy" .
-
-ex:abcde a dcat:DatasetSeries ;
-    dcterms:publisher [ a foaf:Agent ;
-            foaf:name "My name" ] ;
-    dcterms:title "all the datasets by this publisher" .
-
-ex:bcd a skos:Concept ;
-    skos:altLabel "practice" ;
-    skos:definition "test is just for testing" ;
-    skos:prefLabel "test" .
-
-ex:def a skos:Concept ;
-    skos:altLabel "information (leave a comment ;-))" ;
-    skos:definition "data is plural of datum" ;
-    skos:prefLabel "data" .
-
 ex:fkrhkqewjewrc a dqv:Metric ;
     skos:definition "an example of a data quality metric" ;
     skos:prefLabel "example metric" ;
     dqv:expectedDataType xsd:float ;
     dqv:inDimension "Completeness" .
 
+ex:jdhrkdh a dcat:Dataset ;
+    dcterms:description "showing what happens when there are no data quality meaurements." ;
+    dcterms:license [ a dcterms:LicenseDocument ;
+            dcterms:title "cc-by 4.0" ] ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "my name" ] ;
+    dcterms:title "Data set without data quality" ;
+    vcard:contactPoint [ a vcard:Kind ;
+            vcard:hasEmail "my.name@example.com" ] ;
+    adms:status "draft" ;
+    dcat:inSeries ex:abcde ;
+    dcat:theme ex:abc,
+        ex:bcd,
+        ex:def ;
+    dcat:version [ a dcterms:PeriodOfTime ;
+            time:hasBeginning "2025-01-01"^^xsd:date ;
+            time:hasEnd "2025-12-31"^^xsd:date ] ;
+    odrl:hasPolicy plcy:open-information-policy .
+
+ex:abc a skos:Concept ;
+    skos:altLabel "juice" ;
+    skos:definition "energy is energy" ;
+    skos:prefLabel "energy" .
+
 ex:herrcgre a dcat:Dataset ;
+    dcterms:description "A test data set" ;
     dcterms:license [ a dcterms:LicenseDocument ;
             dcterms:title "cc-by 4.0" ] ;
     dcterms:publisher [ a foaf:Agent ;
@@ -105,6 +130,21 @@ ex:herrcgre a dcat:Dataset ;
             time:hasEnd "2025-12-31"^^xsd:date ] ;
     odrl:hasPolicy plcy:open-information-policy .
 
+ex:abcde a dcat:DatasetSeries ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "My name" ] ;
+    dcterms:title "all the datasets by this publisher" .
+
+ex:bcd a skos:Concept ;
+    skos:altLabel "practice" ;
+    skos:definition "test is just for testing" ;
+    skos:prefLabel "test" .
+
+ex:def a skos:Concept ;
+    skos:altLabel "information (leave a comment ;-))" ;
+    skos:definition "data is plural of datum" ;
+    skos:prefLabel "data" .
+
 plcy:open-information-policy a odrl:Policy ;
     dcterms:description """Open Information policy for the project.  
 It ensures that data is Findable, Accessible, Interoperable, and Reusable (FAIR).
@@ -121,7 +161,9 @@ It ensures that data is Findable, Accessible, Interoperable, and Reusable (FAIR)
         ex:bcd,
         ex:def ;
     sdcdc:dataCatalog default:The_Title_Of_Your_Catalog ;
-    sdcdc:datasets ex:herrcgre ;
+    sdcdc:datasets ex:hdkehnf,
+        ex:herrcgre,
+        ex:jdhrkdh ;
     sdcdc:metrics ex:fkrhkqewjewrc ;
     sdcdc:policies plcy:open-information-policy ;
     sdcdc:qualityMeasurements ex:sfasdggfvrln ;

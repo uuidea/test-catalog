@@ -46,8 +46,28 @@ datasets:
       hasEnd: 2026-12-31  
     inSeries: ex:abcde
     hasPolicy: plcy:open-information-policy    
-    wasDerivedFrom: ex:herrcgre
-    
+    wasDerivedFrom: 
+      - ex:herrcgre
+      - ex:jdhrkdh
+  - identifier: ex:jdhrkdh
+    title: Data set without data quality
+    description: showing what happens when there are no data quality meaurements. 
+    publisher:
+      name : my name
+    contactPoint: 
+      hasEmail: my.name@example.com
+    status: draft
+    theme:
+      - ex:abc
+      - ex:bcd 
+      - ex:def
+    license:
+      title: "cc-by 4.0"
+    temporal:
+      hasBeginning: 2025-01-01
+      hasEnd: 2025-12-31  
+    inSeries: ex:abcde
+    hasPolicy: plcy:open-information-policy    
 
 concepts:
   - prefLabel: energy
