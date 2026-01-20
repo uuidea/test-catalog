@@ -15,6 +15,7 @@ hierarchy:
 [cols="1"]
 |=== 
 a| xref:dataset:jdhrkdh.adoc[Data set without data quality]
+a| xref:dataset:sdfasdfsf.adoc[Another test dataset]
 a| xref:dataset:herrcgre.adoc[test dataset]
 |=== 
 

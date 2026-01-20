@@ -52,7 +52,7 @@ datasets:
       - ex:jdhrkdh
   - identifier: ex:jdhrkdh
     title: Data set without data quality
-    description: showing what happens when there are no data quality meaurements. 
+    description: showing what it looks like when there are no data quality meaurements. 
     publisher:
       name : my name
     contactPoint: 

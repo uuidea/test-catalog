@@ -16,6 +16,7 @@ hierarchy:
 |=== 
 a| xref:dataset:hdkehnf.adoc[showcasing lineage]
 a| xref:dataset:jdhrkdh.adoc[Data set without data quality]
+a| xref:dataset:sdfasdfsf.adoc[Another test dataset]
 a| xref:dataset:herrcgre.adoc[test dataset]
 |=== 
 

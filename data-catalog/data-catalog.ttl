@@ -88,12 +88,30 @@ ex:fkrhkqewjewrc a dqv:Metric ;
     dqv:inDimension "Completeness" .
 
 ex:jdhrkdh a dcat:Dataset ;
-    dcterms:description "showing what happens when there are no data quality meaurements." ;
+    dcterms:description "showing what it looks like when there are no data quality meaurements." ;
     dcterms:license [ a dcterms:LicenseDocument ;
             dcterms:title "cc-by 4.0" ] ;
     dcterms:publisher [ a foaf:Agent ;
             foaf:name "my name" ] ;
     dcterms:title "Data set without data quality" ;
+    vcard:contactPoint [ a vcard:Kind ;
+            vcard:hasEmail "my.name@example.com" ] ;
+    adms:status "draft" ;
+    dcat:inSeries ex:abcde ;
+    dcat:theme ex:abc,
+        ex:bcd ;
+    dcat:version [ a dcterms:PeriodOfTime ;
+            time:hasBeginning "2025-01-01"^^xsd:date ;
+            time:hasEnd "2025-12-31"^^xsd:date ] ;
+    odrl:hasPolicy plcy:open-information-policy .
+
+ex:sdfasdfsf a dcat:Dataset ;
+    dcterms:description "A test data set" ;
+    dcterms:license [ a dcterms:LicenseDocument ;
+            dcterms:title "cc-by 4.0" ] ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "my name" ] ;
+    dcterms:title "Another test dataset" ;
     vcard:contactPoint [ a vcard:Kind ;
             vcard:hasEmail "my.name@example.com" ] ;
     adms:status "draft" ;
@@ -105,11 +123,6 @@ ex:jdhrkdh a dcat:Dataset ;
             time:hasBeginning "2025-01-01"^^xsd:date ;
             time:hasEnd "2025-12-31"^^xsd:date ] ;
     odrl:hasPolicy plcy:open-information-policy .
-
-ex:abc a skos:Concept ;
-    skos:altLabel "juice" ;
-    skos:definition "energy is energy" ;
-    skos:prefLabel "energy" .
 
 ex:herrcgre a dcat:Dataset ;
     dcterms:description "A test data set" ;
@@ -128,7 +141,18 @@ ex:herrcgre a dcat:Dataset ;
     dcat:version [ a dcterms:PeriodOfTime ;
             time:hasBeginning "2025-01-01"^^xsd:date ;
             time:hasEnd "2025-12-31"^^xsd:date ] ;
-    odrl:hasPolicy plcy:open-information-policy .
+    odrl:hasPolicy plcy:open-information-policy ;
+    prov:wasDerivedFrom ex:sdfasdfsf .
+
+ex:abc a skos:Concept ;
+    skos:altLabel "juice" ;
+    skos:definition "energy is energy" ;
+    skos:prefLabel "energy" .
+
+ex:def a skos:Concept ;
+    skos:altLabel "information (leave a comment ;-))" ;
+    skos:definition "data is plural of datum" ;
+    skos:prefLabel "data" .
 
 ex:abcde a dcat:DatasetSeries ;
     dcterms:publisher [ a foaf:Agent ;
@@ -139,11 +163,6 @@ ex:bcd a skos:Concept ;
     skos:altLabel "practice" ;
     skos:definition "test is just for testing" ;
     skos:prefLabel "test" .
-
-ex:def a skos:Concept ;
-    skos:altLabel "information (leave a comment ;-))" ;
-    skos:definition "data is plural of datum" ;
-    skos:prefLabel "data" .
 
 plcy:open-information-policy a odrl:Policy ;
     dcterms:description """Open Information policy for the project.  
@@ -163,7 +182,8 @@ It ensures that data is Findable, Accessible, Interoperable, and Reusable (FAIR)
     sdcdc:dataCatalog default:The_Title_Of_Your_Catalog ;
     sdcdc:datasets ex:hdkehnf,
         ex:herrcgre,
-        ex:jdhrkdh ;
+        ex:jdhrkdh,
+        ex:sdfasdfsf ;
     sdcdc:metrics ex:fkrhkqewjewrc ;
     sdcdc:policies plcy:open-information-policy ;
     sdcdc:qualityMeasurements ex:sfasdggfvrln ;

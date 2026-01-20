@@ -52,6 +52,8 @@ a| Completeness
 ---- 
 graph TD
     herrcgre[test dataset]
+    None[Another test dataset]
+    herrcgre --> None
 
 ----
 
@@ -62,6 +64,6 @@ graph TD
 pie
     title Input Datasets Quality Measurements
     "with quality measurements" : 0
-    "without quality measurements" : 0
+    "without quality measurements" : 1
 ----
 
