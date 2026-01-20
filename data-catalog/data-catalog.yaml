@@ -61,7 +61,6 @@ datasets:
     theme:
       - ex:abc
       - ex:bcd 
-      - ex:def
     license:
       title: "cc-by 4.0"
     temporal:
