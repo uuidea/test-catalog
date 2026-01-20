@@ -52,6 +52,7 @@ datasets:
     wasDerivedFrom: 
       - ex:herrcgre
       - ex:jdhrkdh
+
   - identifier: ex:jdhrkdh
     title: Data set without data quality
     description: showing what it looks like when there are no data quality meaurements. 
@@ -69,7 +70,8 @@ datasets:
       hasBeginning: 2025-01-01
       hasEnd: 2025-12-31  
     inSeries: ex:abcde
-    hasPolicy: plcy:open-information-policy    
+    hasPolicy: plcy:open-information-policy
+    wasDerivedFrom: ex:sdfasdfsf
 
   - identifier: ex:sdfasdfsf
     title: Another test dataset
