@@ -2,7 +2,7 @@
 
 == Description 
 
-None
+A test data set
 
 == Themes 
 
@@ -22,19 +22,11 @@ a| License
 a| cc-by 4.0
 a| Status
 a| draft
+a| has Policy
+a| xref:policy:open-information-policy.adoc[open information policy]
 |=== 
 
 == Distributions 
-
-[cols="1,1,1"]
-|=== 
-a| Format
-a| Access URL
-a| Issued
-a| csv
-a| https://www.example.com/getyourdatahere.csv
-a| 2025-11-26
-|=== 
 
 == Data quality 
 

@@ -4271,9 +4271,9 @@ wheels = [
 ]
 
 [[package]]
-name = "simple-data-catalog"
+name = "simple-data-catalog-generator"
 version = "0.0.1"
-source = { editable = "." }
+source = { git = "https://github.com/uuidea/simple-data-catalog-generator.git#9da8ac2681abbfb8e389afc85ffc04e89b6c68ed" }
 dependencies = [
     { name = "asciidoc3" },
     { name = "dataclasses" },
@@ -4294,22 +4294,6 @@ dependencies = [
     { name = "rich" },
     { name = "validators", version = "0.34.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
     { name = "validators", version = "0.35.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
-    { name = "wordcloud" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "asciidoc3" },
-    { name = "dataclasses" },
-    { name = "jinja2" },
-    { name = "linkml", specifier = ">=1.0" },
-    { name = "matplotlib" },
-    { name = "pandas" },
-    { name = "pydantic" },
-    { name = "pyyaml" },
-    { name = "rdflib" },
-    { name = "rich" },
-    { name = "validators" },
     { name = "wordcloud" },
 ]
 
@@ -4615,6 +4599,51 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/ae/43/71a22aa66a1ef974f4e34982ce55d5f38d4770d2f0091eb210374e860b8e/sqlalchemy-2.0.44-cp39-cp39-win32.whl", hash = "sha256:9e9018544ab07614d591a26c1bd4293ddf40752cc435caf69196740516af7100", size = 2106888 },
     { url = "https://files.pythonhosted.org/packages/08/fb/cc98eb1ab3c5ad92b51c0db17ee86d1c33379a7490da376567b902222dcf/sqlalchemy-2.0.44-cp39-cp39-win_amd64.whl", hash = "sha256:8e0e4e66fd80f277a8c3de016a81a554e76ccf6b8d881ee0b53200305a8433f6", size = 2130728 },
     { url = "https://files.pythonhosted.org/packages/9c/5e/6a29fa884d9fb7ddadf6b69490a9d45fded3b38541713010dad16b77d015/sqlalchemy-2.0.44-py3-none-any.whl", hash = "sha256:19de7ca1246fbef9f9d1bff8f1ab25641569df226364a0e40457dc5457c54b05", size = 1928718 },
+]
+
+[[package]]
+name = "the-title-of-your-catalog"
+version = "0.0.1"
+source = { virtual = "." }
+dependencies = [
+    { name = "asciidoc3" },
+    { name = "dataclasses" },
+    { name = "jinja2" },
+    { name = "linkml", version = "1.6.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8.1'" },
+    { name = "linkml", version = "1.8.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.8.1' and python_full_version < '3.9'" },
+    { name = "linkml", version = "1.9.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
+    { name = "matplotlib", version = "3.7.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "matplotlib", version = "3.9.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.9.*'" },
+    { name = "matplotlib", version = "3.10.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "pandas", version = "2.0.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "pandas", version = "2.3.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
+    { name = "pydantic", version = "2.10.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "pydantic", version = "2.12.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
+    { name = "pyyaml" },
+    { name = "rdflib", version = "6.3.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8.1'" },
+    { name = "rdflib", version = "7.4.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.8.1'" },
+    { name = "rich" },
+    { name = "simple-data-catalog-generator" },
+    { name = "validators", version = "0.34.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "validators", version = "0.35.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
+    { name = "wordcloud" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "asciidoc3" },
+    { name = "dataclasses" },
+    { name = "jinja2" },
+    { name = "linkml", specifier = ">=1.0" },
+    { name = "matplotlib" },
+    { name = "pandas" },
+    { name = "pydantic" },
+    { name = "pyyaml" },
+    { name = "rdflib" },
+    { name = "rich" },
+    { name = "simple-data-catalog-generator", git = "https://github.com/uuidea/simple-data-catalog-generator.git" },
+    { name = "validators" },
+    { name = "wordcloud" },
 ]
 
 [[package]]
