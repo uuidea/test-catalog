@@ -46,6 +46,7 @@ datasets:
       hasEnd: 2026-12-31  
     inSeries: ex:abcde
     hasPolicy: plcy:open-information-policy    
+    wasDerivedFrom: ex:herrcgre
     
 
 concepts:
