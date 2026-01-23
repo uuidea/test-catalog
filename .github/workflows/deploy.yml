@@ -32,6 +32,8 @@ jobs:
       #####################  
       ## Python actions
       #####################
+    - name: remove venv if it exists
+      run: rm -rf .venv  
     - name: Setup Python 3.12.7
       uses: actions/setup-python@v3
       with:

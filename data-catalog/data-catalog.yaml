@@ -98,7 +98,7 @@ datasets:
 
   - identifier: ex:kwndjew
     title: Yet another test dataset
-    description: A test data set
+    description: A test data set to see if long lineage chains are shown correctly.
     publisher:
       name : my name
     contactPoint: 
