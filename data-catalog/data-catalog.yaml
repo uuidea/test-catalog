@@ -40,6 +40,7 @@ datasets:
       hasEmail: my.name@example.com
     status: production
     theme:
+      - ex:abc
       - ex:bcd 
       - ex:def
     license:
