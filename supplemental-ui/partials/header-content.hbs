@@ -5,6 +5,7 @@
         <img src="{{{uiRootPath}}}/img/logo.svg" alt="{{site.title}} Logo" style="height: 2rem; width: auto;">
         <span>{{site.title}}</span>
       </a>
+      {{#if env.SITE_SEARCH_PROVIDER}}
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
           <input id="search-input" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
